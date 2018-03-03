@@ -1,21 +1,24 @@
-console.log('READMODE IMPORTED')
+//console.log('READMODE IMPORTED')
 
 // MAIN
-(function readMode() {
+readMode();
+
+
+function readMode() {
 
 
 let jq;
 
 // REMOVING all scripts
-let alltheirScripts = document.getElementsByTagName('script');
+/*let alltheirScripts = document.getElementsByTagName('script');
 for (i=0; i++; i < alltheirScripts.length) {
     alltheirScripts[i].parentNode.removeChild(alltheirScripts[i]);
-}
+}*/
 
 // ADDING JQuery
-var jqScript = document.createElement('script');
+/*var jqScript = document.createElement('script');
 jqScript.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";
-document.getElementsByTagName('head')[0].appendChild(jqScript);
+document.getElementsByTagName('head')[0].appendChild(jqScript);*/
 
 
 
@@ -68,7 +71,7 @@ function getByline() {
     return byline;
 }
 
-}
+}//)();
 
 function containerStyleText() { 
     return `
@@ -116,4 +119,4 @@ function containerStyleText() {
         max-width: 1140px;
       }
     }`;
-})();
+}

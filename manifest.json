@@ -7,15 +7,14 @@
     "icons": { "32": "cdj-icon.png" },
     "permissions": ["activeTab", "tabs"],
     "background": {
-        "scripts": ["main.js", "readMode.js"],
-        "persistent": false
+        "scripts": ["vend/jquery-3.3.1.min.js", "main.js"],
+        "persistent": true
     },
     "content_scripts": [{
-        "js": ["readMode.js", "main.js"],
+        "js": ["vend/jquery-3.3.1.min.js", "readMode.js"],
         "matches": ["http://*/*", "https://*/*"]
     }],
     "browser_action": {
-        "default_title": "READMODE_DEFAULT_TITLE",
         "default_icon": "cdj-icon.png"
     }
 }
