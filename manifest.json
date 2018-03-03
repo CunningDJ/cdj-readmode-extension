@@ -3,7 +3,7 @@
     
     "name": "CunningDJ Read Mode Extension",
     "version": "1.0",
-    "description": "Dark read mode extensionby CunningDJ (David Cunningham).",
+    "description": "Read mode extension (dark) by CunningDJ (David Cunningham).",
     "icons": { "32": "cdj-icon.png" },
     "permissions": ["activeTab", "tabs"],
     "background": {
