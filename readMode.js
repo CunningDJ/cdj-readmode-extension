@@ -1,7 +1,6 @@
 // MAIN
 (function readMode() {
 
-
 let jq;
 
 
