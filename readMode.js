@@ -1,32 +1,13 @@
-//console.log('READMODE IMPORTED')
-
 // MAIN
-readMode();
-
-
-function readMode() {
+(function readMode() {
 
 
 let jq;
-
-// REMOVING all scripts
-/*let alltheirScripts = document.getElementsByTagName('script');
-for (i=0; i++; i < alltheirScripts.length) {
-    alltheirScripts[i].parentNode.removeChild(alltheirScripts[i]);
-}*/
-
-// ADDING JQuery
-/*var jqScript = document.createElement('script');
-jqScript.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";
-document.getElementsByTagName('head')[0].appendChild(jqScript);*/
-
 
 
 setTimeout(function() {
 jQuery.noConflict(); 
 jq = jQuery;
-
-// POST JQUERY LOAD SCRIPT (use jq for jQuery):
 
 // Grabbing headers and text
 let header = jq('h1').removeAttr('style');
@@ -71,7 +52,7 @@ function getByline() {
     return byline;
 }
 
-}//)();
+})();
 
 function containerStyleText() { 
     return `
